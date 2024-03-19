@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content=" This is an ecommerce project !" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?
+    family=Italianno&family=Roboto:ital,wght@0,300;
+    0,400;0,500;0,700;0,900;1,300;1,500;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>ECOMMERCE-PROJECT</title>
+  </head>
+
+  <body>
+    <!-- navbar starts now -->
+    <i class="fa-solid fa-bars fa-2x" id="menu-icon"></i>
+    <nav id="menu" class="hidden">
+      <ul class="nav-upper flex-space-around">
+        <li class="nav__list">
+          <a href="index.html" class="nav__link"> Home </a>
+        </li>
+        <li class="nav__list">
+          <a href="Register.html" class="nav__link"> Register </a>
+        </li>
+        <li class="nav__list">
+          <a href="login.html" class="nav__link"> Login </a>
+        </li>
+        <li class="nav__list">
+          <a href="index.html" class="nav__link"> Logout </a>
+        </li>
+        <li class="nav__list">
+          <a href="contact.html" class="nav__link"> Contact </a>
+        </li>
+        <li class="nav__list">
+          <a href="profile.html" class="nav__link">
+            <img
+              src="images/IMG-20220308-WA0008.jpg"
+              alt="profile-icon"
+              class="profile-icon"
+            />
+          </a>
+        </li>
+      </ul>
+      <ul class="nav-lower flex-space-around">
+        <li class="nav__list">
+          <a href="Treasure-Express.html" class="nav__link nav__brand">
+            Treasures-Express
+          </a>
+        </li>
+        <li class="nav__list">
+          <a href="cart.html" class="nav__link">
+            <span><i class="fa-solid fa-cart-shopping"></i></span>
+            Cart 2 Product -$858.96
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- header starts now -->
+    <header class="header">
+      <div class="banner flex-space-around">
+        <marquee class="banner__title" behavior="" direction="">
+          30% sales Going on!!</marquee
+        >
+
+        <div class="features flex-space-around">
+          <article class="feature flex-center">
+            <i class="fa-solid fa-truck feature__icon"></i>
+            <h3>Shipping within 7days</h3>
+          </article>
+
+          <article class="feature flex-center">
+            <i class="fa-brands fa-rocketchat feature__icon"></i>
+            <h3>Support 24 / 7 .</h3>
+          </article>
+          <article class="feature flex-center">
+            <i class="fa-regular fa-credit-card feature__icon"></i>
+            <h3>Safe Payment</h3>
+          </article>
+        </div>
+      </div>
+    </header>
+    <!--  header  ends now -->
+    <!-- main starts now -->
+
+    <main class="flex-center">
+      <div class="sidebar">
+        <section class="cetagories-section">
+          <h3 class="section-title">Categories</h3>
+          <ul class="list">
+            <li class="list__item">
+              <label for="phone">
+                <input type="checkbox" name="photo" id="phone" value="phone" />
+                Phone
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="tablets">
+                <input
+                  type="checkbox"
+                  name="tablets"
+                  id="tablets"
+                  value="tablets"
+                />
+                Tablets
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="television">
+                <input
+                  type="checkbox"
+                  name="television"
+                  id="television"
+                  value="television"
+                />
+                Television
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="computers">
+                <input
+                  type="checkbox"
+                  name="computers"
+                  id="computers"
+                  value="computers"
+                />
+                Computers
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="headphones">
+                <input
+                  type="checkbox"
+                  name="headphones"
+                  id="headphones"
+                  value="headphones"
+                />
+                Headphones
+              </label>
+            </li>
+          </ul>
+        </section>
+
+        <section class="price-section">
+          <h3 class="section-title">Price Range</h3>
+          <ul class="list">
+            <li class="list__item">
+              <label for="price1">
+                <input type="radio" name="price" id="price1" value="[0,20]" />
+                $0-$20
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="price2">
+                <input type="radio" name="price" id="price2" value="[21,50]" />
+                $21-$50
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="price3">
+                <input type="radio" name="price" id="price3" value="[59,100]" />
+                $50-$100
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="price4">
+                <input
+                  type="radio"
+                  name="price"
+                  id="price4"
+                  value="[100,300]"
+                />
+                $100-300
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="price5">
+                <input type="radio" name="price" id="price5" value="[300+]" />
+                $300+
+              </label>
+            </li>
+          </ul>
+        </section>
+        <section class="shipping-section">
+          <h3 class="section-title">Shipping options</h3>
+          <ul class="list">
+            <li class="list__item">
+              <label for="free">
+                <input type="radio" name="shipping" id="free" value="free" />
+                Free shipping
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="paid">
+                <input type="radio" name="shipping" id="paid" value="paid" />
+                Paid shipping
+              </label>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="main-content">
+        <section class="actions flex-space-around">
+          <div class="actions__sort">
+            <label for="sort"> Sort By: </label>
+            <select name="sort" id="sort">
+              <option value="sold">Most Sold first</option>
+              <option value="rating">Most rated first</option>
+              <option value="price">Cheapest first</option>
+              <option value="arrival">Newest Arrivel</option>
+              <option value="discount">Biggest discount first</option>
+            </select>
+          </div>
+          <div class="actions__search">
+            <input type="text" placeholder="Search Product" />
+            <button class="btn">
+              <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </section>
+
+        <!-- product section starts -->
+        <section class="products">
+          <!-- articles section starts -->
+          <article class="product card">
+            <div class="badge">
+              <span>5 in stock</span>
+              <hr class="hr-design" />
+              <span> 3 sold</span>
+            </div>
+            <img
+              class="product__img"
+              src="images/smartwatch.jpg"
+              alt="product1"
+            />
+            <div class="product__body">
+              <h3 class="product__name">Treasures-smart-watch v3</h3>
+              <p>
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot red"></span>
+              </p>
+              <p class="product__description">
+                Introducing the latest innovation in wearable technology:
+                Treasures-smart-watch v3. Engineered to seamlessly integrate
+                into your lifestyle, Treasures-smart-watch v3 combines
+                cutting-edge features with sleek design, ensuring you stay
+                connected and in control throughout your day. !...
+                <a href="product.html" class="learn-more">Learn More</a>
+              </p>
+              <h4 class="product__price">$225.99</h4>
+              <p class="product__rating">Rating:4.5/5</p>
+              <button class="btn product__button">
+                <a href="cart.html" class="nav__link"> Add to Cart</a>
+              </button>
+            </div>
+            <!-- articles section ends -->
+          </article>
+
+          <!-- articles section starts -->
+
+          <article class="product card">
+            <div class="badge">
+              <span>11 in stock</span>
+              <hr class="hr-design" />
+              <span> 7 sold</span>
+            </div>
+            <img class="product__img" src="images/shoes.jpg" alt="product2" />
+            <div class="product__body">
+              <h3 class="product__name">Treasures-shoes</h3>
+              <p>
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot red"></span>
+              </p>
+              <p class="product__description">
+                Introducing the Treasures-shoes: the epitome of sophistication
+                and style in formal footwear. Crafted with meticulous attention
+                to detail and unparalleled craftsmanship, these shoes are
+                designed to elevate your formal attire to new heights. !...
+                <a href="product1.html" class="learn-more">Learn More</a>
+              </p>
+              <h4 class="product__price">$115.99</h4>
+              <p class="product__rating">Rating:4.3/5</p>
+              <button class="btn product__button">
+                <a href="cart.html" class="nav__link"> Add to Cart</a>
+              </button>
+            </div>
+          </article>
+
+          <article class="product card">
+            <div class="badge">
+              <span>18 in stock</span>
+              <hr class="hr-design" />
+              <span> 6 sold</span>
+            </div>
+            <img class="product__img" src="images/vrset.jpg" alt="product3" />
+            <div class="product__body">
+              <h3 class="product__name">Treasures-Smart-VR</h3>
+              <p>
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot red"></span>
+              </p>
+              <p class="product__description">
+                Introducing Treasure-smart-VR: Revolutionizing the Way You
+                Experience Virtual Reality! Are you ready to step into a world
+                of endless possibilities and immersive experiences? !...
+                <a href="product2.html" class="learn-more">Learn More</a>
+              </p>
+              <h4 class="product__price">$80.99</h4>
+              <p class="product__rating">Rating:4.7/5</p>
+              <button class="btn product__button">
+                <a href="cart.html" class="nav__link"> Add to Cart</a>
+              </button>
+            </div>
+          </article>
+
+          <article class="product card">
+            <div class="badge">
+              <span>3 in stock</span>
+              <hr class="hr-design" />
+              <span> 17 sold</span>
+            </div>
+            <img class="product__img" src="images/tablets.jpg" alt="product4" />
+            <div class="product__body">
+              <h3 class="product__name">Treasures-Tablets</h3>
+              <p>
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot red"></span>
+              </p>
+              <p class="product__description">
+                🚀 Introducing the Treasures-Tablet-X: Unleash Your Potential
+                with the Ultimate Tablet Experience! 🚀!...
+                <a href="product3.html" class="learn-more">Learn More</a>
+              </p>
+              <h4 class="product__price">$180.99</h4>
+              <p class="product__rating">Rating:4.9/5</p>
+              <button class="btn product__button">
+                <a href="cart.html" class="nav__link"> Add to Cart</a>
+              </button>
+            </div>
+          </article>
+
+          <article class="product card">
+            <div class="badge">
+              <span>3 in stock</span>
+              <hr class="hr-design" />
+              <span> 17 sold</span>
+            </div>
+            <img
+              class="product__img"
+              src="images/gaming-chair.jpg"
+              alt="product5"
+            />
+            <div class="product__body">
+              <h3 class="product__name">Treasures-gaming-chair</h3>
+              <p>
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot red"></span>
+              </p>
+              <p class="product__description">
+                🎮 Level Up Your Gaming Experience with the
+                Treasures-gaming-chair! 🎮 Are you ready to take your gaming
+                sessions to the next level of comfort and performance? !...
+                <a href="product4.html" class="learn-more">Learn More</a>
+              </p>
+              <h4 class="product__price">$80.99</h4>
+              <p class="product__rating">Rating:4.3/5</p>
+              <button class="btn product__button">
+                <a href="cart.html" class="nav__link"> Add to Cart</a>
+              </button>
+            </div>
+          </article>
+
+          <article class="product card">
+            <div class="badge">
+              <span>8 in stock</span>
+              <hr class="hr-design" />
+              <span> 47 sold</span>
+            </div>
+            <img
+              class="product__img"
+              src="images/lady-shoes.jpg"
+              alt="product6"
+            />
+            <div class="product__body">
+              <h3 class="product__name">Treasures-lady-shoes</h3>
+              <p>
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot red"></span>
+              </p>
+              <p class="product__description">
+                👟 Unleash Your Treasures-lady-shoes! 👟 Are you ready to
+                conquer your fitness goals and unleash your full potential? !...
+                <a href="product5.html" class="learn-more">Learn More</a>
+              </p>
+              <h4 class="product__price">$180.99</h4>
+              <p class="product__rating">Rating:4.9/5</p>
+              <button class="btn product__button">
+                <a href="cart.html" class="nav__link"> Add to Cart</a>
+              </button>
+            </div>
+          </article>
+        </section>
+        <!-- product section ends -->
+        <div class="pagination">
+          <button class="btn pagination__btn">
+            <i class="fas fa-less-than"></i>
+          </button>
+          <button class="btn pagination__btn">2</button>
+          <button class="btn pagination__btn">3</button>
+          <button class="btn pagination__btn">4</button>
+          <button class="btn pagination__btn">5</button>
+          <button class="btn pagination__btn">6</button>
+          <button class="btn pagination__btn">7</button>
+          <button class="btn pagination__btn">8</button>
+          <button class="btn pagination__btn">9</button>
+          <button class="btn pagination__btn">10</button>
+          <button class="btn pagination__btn">...</button>
+          <button class="btn pagination__btn">50</button>
+          <button class="btn pagination__btn">
+            <i class="fas fa-greater-than"></i>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- main endss now -->
+
+    <!-- navbar endss now -->
+
+    <!-- navbar starts now -->
+    <!-- navbar endss now -->
+    <!-- navbar starts now -->
+    <!-- navbar endss now -->
+    <!-- navbar starts now -->
+    <!-- navbar endss now -->
+    <!-- navbar starts now -->
+    <!-- navbar endss now -->
+    <!-- footer starts now -->
+    <footer class="footer flex-space-around">
+      <div class="flex-space-around">
+        <label for="subscribe"> subscribe for the updates & news </label>
+        <input
+          type="email"
+          id="subscribe"
+          name="subscribe"
+          class="footer__input"
+          placeholder="your email address"
+        />
+        <button class="btn btn-subscribe">Subscribe</button>
+      </div>
+      <div>
+        <p>&copy; Copyright 2024 Treasures-Express . All rights Reserve</p>
+      </div>
+    </footer>
+    <!-- footer endss now -->
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
